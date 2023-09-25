@@ -1,0 +1,71 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    background: rgb(99, 99, 228);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    background-color: white;
+    width: 270px;
+    height: 400px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+.header{
+    text-align: center;
+    padding: 10px;
+    border-bottom: 3px solid rgb(99, 99, 228);
+}
+.form{
+    padding: 20px;
+}
+.form .input{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-bottom: 30px;
+    position: relative;
+}
+.form .input input{
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid blue;
+    outline: none;
+}
+.form .input label{
+    position: absolute;
+    left: 10px;
+    font-size: 13px;
+    top: 10px;
+}
+.form button{
+    background-color: blue;
+    border: none;
+    color: white;
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: 70px;
+    cursor: pointer;
+}
+.form .input a{
+    font-size: 12px;
+    padding: 5px;
+}
+
+.form input:focus ~ label,
+.form input:valid ~ label{
+    top: -20px;
+    background: blue;
+    padding: 3px;
+    color: white;
+    transition: 0.5s;
+}
